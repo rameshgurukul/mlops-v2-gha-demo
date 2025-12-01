@@ -8,7 +8,7 @@ variables:
   ap_vm_image: ubuntu-latest
 
   namespace: mlopsv2gha #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
-  postfix: ao04rm
+  postfix: ao04rmh
   location: westus3
 
   environment: prod
@@ -38,4 +38,5 @@ variables:
   terraform_st_storage_account: st$(namespace)$(postfix)$(environment)tf
   terraform_st_container_name: default
   terraform_st_key: mlops-tab
+
 
